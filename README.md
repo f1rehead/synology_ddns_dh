@@ -36,10 +36,10 @@ Set up a Custom DDNS Provider in Synology DSM
 ---------------------------------------------
 Log in to your Synology DSM and click on Control Panel > External Access > DDNS.
 Click the "Customize" button to create a new DDNS provider. Enter a name for your service provider. In the Query URL field enter the URL to the script like this, filling in your domain name and path (if any; I put mine at the root level of the website):
-https://[your domain]/[your path]/synology_ddns_dh?host=__HOSTNAME__&passwd=__PASSWORD__&myip=__MYIP__
+https://[your domain]/[your path]/synology_ddns_dh.php?host=__HOSTNAME__&passwd=__PASSWORD__&myip=__MYIP__
 
 For example:
-https://example.com/cgis/synology_ddns_dh?host=__HOSTNAME__&passwd=__PASSWORD__&myip=__MYIP__
+https://example.com/cgis/synology_ddns_dh.php?host=__HOSTNAME__&passwd=__PASSWORD__&myip=__MYIP__
 
 
 Create a DDNS Host in Synology DSM
